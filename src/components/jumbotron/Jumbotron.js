@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-function Jumbotron(props) {
+function Jumbotron() {
     return (
         <Fragment>
             <div className="jumbotron text-center rounded bg-danger text-white bg-gradient-danger margin-top-5 container">

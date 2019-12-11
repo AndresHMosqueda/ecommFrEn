@@ -20,8 +20,8 @@ export const addItem = (item, next) => {
 }
 
 export const itemTotal = () => {
-    if(typeof window !== 'undefined'){
-        if(localStorage.getItem('cart')){
+    if (typeof window !== 'undefined') {
+        if (localStorage.getItem('cart')) {
             return JSON.parse(localStorage.getItem('cart')).length;
         }
     }
@@ -29,8 +29,8 @@ export const itemTotal = () => {
 }
 
 export const getCart = () => {
-    if(typeof window !== 'undefined'){
-        if(localStorage.getItem('cart')){
+    if (typeof window !== 'undefined') {
+        if (localStorage.getItem('cart')) {
             return JSON.parse(localStorage.getItem('cart'));
         }
     }

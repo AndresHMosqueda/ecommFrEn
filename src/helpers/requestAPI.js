@@ -10,17 +10,11 @@ function RequestAPI(props) {
     //Request products from API
     const getAPI = async () => {
         const url = 'http://localhost:8000/api'
-
         const result = await Axios(url)
-
         addInfo(result.data.search_response.items.Item)
     }
-
     useEffect(() => { getAPI() }, []
     )
-
-    
-
 
     return (
         <div className="container-fluid">

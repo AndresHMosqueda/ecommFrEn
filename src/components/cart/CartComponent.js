@@ -22,7 +22,7 @@ function CartComponent() {
     }
 
     const noItemsMessage = () => (
-        <h2>Your cart is empty. <hr/>  <Link to="/"> Continue Shopping </Link>
+        <h2>Your cart is empty. <hr />  <Link to="/"> Continue Shopping </Link>
         </h2>
     )
 

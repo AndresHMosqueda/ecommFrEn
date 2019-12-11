@@ -1,10 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Axios from 'axios';
 
 function SearchProductComponent(props) {
 
-    
-    
     const [searchPr, addSearchPr] = useState({
         product: ''
     })
@@ -12,29 +10,25 @@ function SearchProductComponent(props) {
     const handleState = e => {
         addSearchPr({
             ...searchPr,
-            [e.target.name] : e.target.value
+            [e.target.name]: e.target.value
         })
-       
     }
 
-     //Request products from API
-     const getAPIProducts = async searchPr => {
+    //Request products from API
+    const getAPIProducts = async searchPr => {
+
         console.log(searchPr);
         const url = 'http://localhost:8000/api';
-
         const result = await Axios(url)
-
-        
         addSearchPr(result.data.search_response.items.Item)
-        console.log(result.data.search_response.items.Item);
-        console.log(result.data);
-        console.log('Resultado', searchPr)
-        
+
     }
 
     const handleSubmit = e => {
+
         e.preventDefault()
         getAPIProducts(searchPr)
+
     }
 
     return (

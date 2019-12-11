@@ -2,9 +2,8 @@ import React, { Fragment } from 'react';
 import Galery from '../galery/Galery';
 import RequestAPI from '../../helpers/requestAPI';
 
-function homeComponent(props) {
+function homeComponent() {
 
-   
 
     return (
         <Fragment>

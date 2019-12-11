@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import productDetail from '../components/product/ProductDetail'
+
 import homeComponent from '../components/home/HomeComponent';
 import Navbar from '../components/navbar/Navbar'
 import Jumbotron from '../components/jumbotron/Jumbotron';
@@ -14,7 +14,7 @@ const Routes = () => {
             <Navbar />
             <Jumbotron/>
             <Switch>
-                <Route path="/productDetail/:id" exact component={productDetail} />
+                
                 <Route path="/" exact component={homeComponent} />
                 <Route path="/cart" exact component={CartComponent} />
             </Switch>
