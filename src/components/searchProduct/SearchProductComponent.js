@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
+import {BASE_URL} from '../../index'
 
 function SearchProductComponent(props) {
 
@@ -18,7 +19,7 @@ function SearchProductComponent(props) {
     const getAPIProducts = async searchPr => {
 
         console.log(searchPr);
-        const url = 'http://localhost:8000/api';
+        const url = `${BASE_URL}`;
         const result = await Axios(url)
         addSearchPr(result.data.search_response.items.Item)
 

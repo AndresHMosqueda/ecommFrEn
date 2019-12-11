@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {BASE_URL} from '../index'
 
 import Axios from 'axios';
 import CardsComponent from '../components/cards/CardsComponent';
@@ -9,7 +10,7 @@ function RequestAPI(props) {
 
     //Request products from API
     const getAPI = async () => {
-        const url = 'http://localhost:8000/api'
+        const url = `${BASE_URL}`
         const result = await Axios(url)
         addInfo(result.data.search_response.items.Item)
     }
