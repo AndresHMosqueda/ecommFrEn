@@ -4,7 +4,7 @@ import Axios from 'axios';
 function SearchProductComponent(props) {
 
     const [gifts, addGifts] = useState('')
-    const [searchProduct, addSearchProduct] = useState([])
+    // const [searchProduct, addSearchProduct] = useState([])
     const [searchPr, addSearchPr] = useState({
         product: ''
     })
@@ -15,7 +15,6 @@ function SearchProductComponent(props) {
             [e.target.name] : e.target.value
         })
        
-        
     }
 
      //Request products from API
@@ -25,8 +24,11 @@ function SearchProductComponent(props) {
 
         const result = await Axios(url)
 
-        console.log(result);
         
+        addSearchPr(result.data.search_response.items.Item)
+        console.log(result.data.search_response.items.Item);
+        console.log(result.data);
+        console.log('Resultado', searchPr)
         
     }
 

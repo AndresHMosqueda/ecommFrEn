@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Galery from '../galery/Galery';
-import CardsComponent from '../cards/CardsComponent';
+import RequestAPI from '../../helpers/requestAPI';
 
 function homeComponent(props) {
 
@@ -10,7 +10,7 @@ function homeComponent(props) {
         <Fragment>
             <div className="container">
                 <Galery />
-                <CardsComponent />
+                <RequestAPI/>
             </div>
         </Fragment>
     );

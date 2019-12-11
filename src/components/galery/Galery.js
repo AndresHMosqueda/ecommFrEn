@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-
+import img1 from '../../assets/image1.jpeg'
 
 function Galery(props) {
     return (
@@ -11,7 +11,7 @@ function Galery(props) {
                         <div className="col-sm-6">
                             <div className="row">
                                 <div className="col-md-12 div-pic-1 puntero">
-                                    <p className="pic-titulo">  Hola </p>
+                                    {/* <img src={img1}/> */}
                                 </div>
                             </div>
 
