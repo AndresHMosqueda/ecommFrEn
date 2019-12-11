@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <Fragment>
-            <footer mt-4>
+            <footer>
                 <div className="footer-gray">
                     <div className="footer-custom">
                         <div className="footer-lists">

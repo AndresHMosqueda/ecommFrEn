@@ -19,10 +19,12 @@ function RequestAPI(props) {
     useEffect(() => { getAPI() }, []
     )
 
+    
+
 
     return (
         <div className="container-fluid">
-            <h2 className="mb-4"> Best Sellers </h2>
+            <h2 className="mb-4 text-success"> Best Sellers </h2>
             <div className="row">
                 {info.map((info, index) => (
                     <CardsComponent colNum="col-md-4 col-xs-6" key={index} info={info} />

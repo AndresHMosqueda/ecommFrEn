@@ -3,8 +3,8 @@ import Axios from 'axios';
 
 function SearchProductComponent(props) {
 
-    const [gifts, addGifts] = useState('')
-    // const [searchProduct, addSearchProduct] = useState([])
+    
+    
     const [searchPr, addSearchPr] = useState({
         product: ''
     })

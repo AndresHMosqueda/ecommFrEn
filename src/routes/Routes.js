@@ -5,6 +5,8 @@ import homeComponent from '../components/home/HomeComponent';
 import Navbar from '../components/navbar/Navbar'
 import Jumbotron from '../components/jumbotron/Jumbotron';
 import Footer from '../components/footer/Footer';
+import CartComponent from '../components/cart/CartComponent';
+
 
 const Routes = () => {
     return (
@@ -12,8 +14,9 @@ const Routes = () => {
             <Navbar />
             <Jumbotron/>
             <Switch>
-                <Route path="/productDetail" exact component={productDetail} />
+                <Route path="/productDetail/:id" exact component={productDetail} />
                 <Route path="/" exact component={homeComponent} />
+                <Route path="/cart" exact component={CartComponent} />
             </Switch>
             <Footer/>
         </BrowserRouter>
