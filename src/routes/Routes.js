@@ -4,6 +4,7 @@ import productDetail from '../components/product/ProductDetail'
 import homeComponent from '../components/home/HomeComponent';
 import Navbar from '../components/navbar/Navbar'
 import Jumbotron from '../components/jumbotron/Jumbotron';
+import Footer from '../components/footer/Footer';
 
 const Routes = () => {
     return (
@@ -14,6 +15,7 @@ const Routes = () => {
                 <Route path="/productDetail" exact component={productDetail} />
                 <Route path="/" exact component={homeComponent} />
             </Switch>
+            <Footer/>
         </BrowserRouter>
     )
 }
