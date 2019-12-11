@@ -10,7 +10,7 @@ function RequestAPI(props) {
 
     //Request products from API
     const getAPI = async () => {
-        const url = `${BASE_URL}`
+        const url = BASE_URL
         const result = await Axios(url)
         addInfo(result.data.search_response.items.Item)
     }

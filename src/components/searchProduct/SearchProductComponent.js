@@ -19,7 +19,7 @@ function SearchProductComponent(props) {
     const getAPIProducts = async searchPr => {
 
         console.log(searchPr);
-        const url = `${BASE_URL}`;
+        const url = BASE_URL;
         const result = await Axios(url)
         addSearchPr(result.data.search_response.items.Item)
 
